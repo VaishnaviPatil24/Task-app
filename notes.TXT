@@ -1,0 +1,14 @@
+------Angular mongi tut----------
+-has php so not that useful
+https://www.youtube.com/watch?v=IenJ7TdXk0I
+-has mongo,express and node explanation
+https://www.youtube.com/watch?v=eYVGoXPq2RA
+-has blog link of angular and mongo tut
+https://bezkoder.com/angular-12-mongodb-node-js-express/
+
+
+username- vaishnavi
+password- UtGbGsjc169N8VkJ
+
+to start mongod --dbpath="C://MongoFiles/data/db"
+in another cmd mongo
