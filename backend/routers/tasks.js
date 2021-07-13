@@ -25,8 +25,11 @@ router.get('/:id', async(req,res)=>{
 router.put('/:id', async(req,res)=>{
     try{
         const task = await Task.findById(req.params.id)
-        console.log(req.body.reminder)
+        console.log(req.body)
         task.reminder = req.body.reminder
+        task.text = req.body.text
+        task._id = req.body._id
+        task.day = req.body.day
         const t1 = await task.save()
         res.json(t1)
     }
@@ -34,7 +37,7 @@ router.put('/:id', async(req,res)=>{
         res.send("error" + err);
     }
 })
-
+ 
 router.post('/', async(req,res) => {
     const task = new Task({ 
         text: req.body.text,
